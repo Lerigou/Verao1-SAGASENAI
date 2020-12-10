@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Jogos </title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="CSS/paginajogo.css">
+  <link rel="stylesheet" href="CSS/menu.css">
+
+</head>
+</head>
+
+<body>
+  
+  <ul>
+    <li><a href="index.html">Principal</a></li>
+    <li><a class="active">Jogos</a></li>
+    <li><a href="simulador.html">Simulador</a></li>
+    <li style="float:right"><a href="dicas.html">Dicas</a></li>
+  </ul>
+  <div class="biblioteca">
+    <div class="jogo1" onmousedown="jogar1()">
+      <p> Labirinto </p>
+      <p> Você estava a caminho da escola e sua mãe te liga avisando que esqueceu a torneira de casa aberta!
+        Em alguns minutos, sua casa inundará! Corra antes que o tempo acabe! </p>
+    </div>
+    <br>
+    <div class="jogo2" onmousedown="jogar2()">
+      <p> Aventura na ETA </p>
+      <p> Você é um super herói e os engenheiros precisam da sua ajuda! Durante a construção de um reservatório,
+        alguns engenheiros ficaram presos entre os canos, cabe a você desviar das tubulações e salvar os engenheiros
+        presos!</p>
+    </div>
+  </div>
+  <script src="JS/jogo.js"></script>
+</body>
+
+</html>

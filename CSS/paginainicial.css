@@ -1,0 +1,109 @@
+*,
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: #024b61;
+            overflow-x: hidden;
+        }
+
+        .container {
+            margin: auto;
+            width: 100vw;
+            height: 95vh;
+            align-items: center;
+        }
+
+        ::-webkit-scrollbar {
+            background-color: transparent;
+            width: 9px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ffd900a1; 
+            border-radius: 100px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffd900; 
+        }
+
+        /* width = largura  */
+
+        .dica1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background: #0099ff;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
+        }
+
+        .dica2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background: #0099ff;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
+        }
+
+        .dica3 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background: #0099ff;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 300;
+        }
+
+        p {
+            color: white;
+            text-align: justify;
+            font-size: 20px;
+            padding: 2%;
+        }
+        
+        @media screen and (max-width: 1100px) {
+            p {
+                font-size: 25px;
+            }
+        }
+        
+        @media screen and (max-width: 560px) {
+            p {
+                font-size: 16px;
+            }
+            a {
+                font-size: 15px;
+            }
+        }
+        
+        @media screen and (max-width: 410px) {
+            p {
+                font-size: 14px;
+            }
+        }
+        
+        
+        @media screen and (max-width: 300px) {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        /* deixar a letra de um tamanho legível quando diminuir a tela!
+        deixar a torneira responsiva! */
+
+        .aah {
+            margin: auto;
+            width: 90%;
+        }

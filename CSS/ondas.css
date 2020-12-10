@@ -1,0 +1,122 @@
+.ondas {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.frente {
+    width: 100vh;
+}
+
+.onda1 {
+    animation: mover1 2s 1s ease-in-out infinite alternate;
+}
+
+@keyframes mover1 {
+    0% {
+    transform: translateX(-20px);
+} 50% {
+    transform: translateX(0px);
+} 100% {
+    transform: translateX(-20px);
+}
+}
+
+.onda2 {
+    width: 20px;
+    animation: mover2 2s 1s ease-in-out infinite alternate;
+}
+
+@keyframes mover2 {
+    0% {
+    transform: translateX(-20px);
+} 50% {
+    transform: translateX(0px);
+} 100% {
+    transform: translateX(-20px);
+}
+}
+
+.onda3 {
+animation: mover3 3s 1s ease-in-out infinite alternate;
+}
+
+@keyframes mover3 {
+    0% {
+    transform: translateX(-20px);
+} 50% {
+    transform: translateX(0px);
+} 100% {
+    transform: translateX(-20px);
+}
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        background: #fff;
+    }
+    }
+
+.duck {
+    position: relative;
+    top: 39vh;
+    left: 30vw;
+    z-index: 1;
+    animation: flutuar 3s 1s ease-in-out infinite alternate;
+}
+
+.duck img{
+    width: 13%;
+}
+
+
+h01 {
+    color: transparent;
+    font-family: cursive;
+    font-size: 2.6vw;
+}
+
+.duck:hover h01 {
+    color: #ffffff ;
+    font-family: cursive;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    -webkit-text-stroke-color: #000; /* cor da borda */
+}
+
+@keyframes flutuar {
+    0% {
+        top: 50vh;
+        left: 40vw;
+    } 50% {
+        top: 53vh;
+        left: 43vw;
+    } 100% {
+        top: 50vh;
+        left: 40vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .duck{
+        margin-top: 80px;
+    }
+    .duck img{
+        width: 5em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .duck{
+        margin-top: 150px;
+    }    
+}
+
+@media screen and (max-width: 400px){
+    .duck{
+        margin-top: 180px;
+    }    
+}
+
+

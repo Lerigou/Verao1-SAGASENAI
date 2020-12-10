@@ -1,0 +1,203 @@
+.torneira {
+    width: 30vw;
+    height: 25vh;
+    transform: translate(0px, 40px);
+}
+
+@media screen and (max-width: 600px) {
+    .torneira {
+        width: 20vw;
+        height: 15vh;
+    }
+}
+
+.onnoff {    
+    width: 23px;
+    height: 20px;
+    transform: translate(35px, 20px);
+    border-radius: 0px 0px 0px 0px;
+    background-color: darkgray;
+}
+
+.torneira .corpo {
+    width: 80px;
+    height: 40px;
+    border-radius: 0px 10px 0px 0px;
+    box-shadow: 0px 3px 1px 0px #8d8d8d;
+    background-color: #a9a9a9;
+    position: absolute;
+
+}
+
+.torneira .ponta {
+    border-radius: 0px 0px 0px 10px;
+    transform: translate(55px, 0px);
+}
+
+.torneira .corpo .ponta {
+    width: 40px;
+    height: 60px;
+    border-radius: 0px 10px 0px 0px;
+    box-shadow: 2px 0px 0px 1px #8d8d8d;
+    background-color: darkgrey;
+    position: relative;
+}
+
+.torneira .registro {
+    width: 30px;
+    height: 38px;
+    background-color: #a9a9a9;
+    border-radius: 10px 10px 0px;
+    box-shadow: 3px 0px 0px 0px  #8d8d8d;
+    transform: translate(25px, -24px);
+    position: relative;
+    z-index: -1;
+    /* skew(30deg) = ele mexe na largura da div, podendo distorcer
+     rotate(-20deg) = mexe na rotação da div */
+}
+
+.torneira .onnoff {
+    width: 26px;
+    height: 12px;
+    border-radius: 0px 10px 10px 3px;
+    box-shadow: 0px 3px 1px 0px #8d8d8d;
+    background-color: darkgrey;
+    transform: translate(50px, -55px);
+    position: absolute;
+    transition: .5s ease-in-out;
+    z-index: -1;
+
+}
+
+.agua1 {
+    width: 30px;
+    height: 38px;
+    background-color: darkturquoise;
+    border-radius: 50px;
+    transform: translate(62px, -35px);
+    position: relative;
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+.agua2 {
+    width: 30px;
+    height: 38px;
+    background-color: darkturquoise;
+    border-radius: 50px;
+    transform: translate(62px, -40px);
+    position: fixed;
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+.agua3 {
+    width: 30px;
+    height: 38px;
+    background-color: darkturquoise;
+    border-radius: 50px;
+    transform: translate(62px, -40px);
+    position: fixed;
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+.agua4 {
+    width: 30px;
+    height: 38px;
+    background-color: darkturquoise;
+    border-radius: 50px;
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, -40px);
+    position: fixed;
+    transition: .5s ease-in-out;
+    z-index: -1;
+}
+
+/*         .agua2 {
+    width: 17px;
+    height: 20px;
+    background-color: darkturquoise;
+    transform: translate(1px, 10px);
+} */
+
+.torneira:hover .onnoff {
+    transform: translate(44px, -55px) rotate(-30deg);
+    transition: .5s ease-in-out;
+
+}
+
+.torneira:hover .agua1 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 25px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:hover .agua2 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 35px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:hover .agua3 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 85px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:hover .agua4 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 133px);
+    transition: .5s ease-in-out;
+}
+
+label {
+    font-size: 25px;
+    color: transparent;
+}
+
+a {
+    font-size: 25px;
+    color: transparent;
+    text-decoration: none;
+}
+
+.torneira:hover a {
+    color: #7BB8FF;
+    transition: 1s ease-in-out;
+}
+
+.torneira:focus .onnoff {
+    transform: translate(44px, -55px) rotate(-30deg);
+    transition: .5s ease-in-out;
+
+}
+
+.torneira:focus .agua1 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 25px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:focus .agua2 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 35px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:focus .agua3 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 85px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:focus .agua4 {
+    box-shadow: 0px 3px 0px 3px  #01a7aac0;
+    transform: translate(62px, 133px);
+    transition: .5s ease-in-out;
+}
+
+.torneira:focus a {
+    color: #7BB8FF;
+    transition: 1s ease-in-out;
+}

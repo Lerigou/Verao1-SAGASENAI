@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Simulador de consumo </title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,200&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./CSS/menu.css">
+  <link rel="stylesheet" href="CSS/simulador.css">
+</head>
+
+<body>
+  
+    <ul>
+      <li><a href="./index.html">Principal</a></li>
+      <li><a href="./jogos.html">Jogos</a></li>
+      <li><a class="active">Simulador</a></li>
+      <li style="float:right"><a href="./dicas.html">Dicas</a></li>
+    </ul>
+  </div>
+  
+<div class="container">
+  <div id="caixa" class="caixa">
+    <br>
+    <div id="dica1">
+      <br>
+      <div class="aah">
+        <p id="sc"> SIMULADOR DE CONSUMO </p>
+      </div>
+
+      <div class="simulador">
+        <p class="simuladorb">Digite quantos metros cubicos de água você gastou no mês:</p>
+
+          <br>
+          <input id="consumo" class="simuladorin" type="number" placeholder="EX: 12">
+          <br>
+          <p class="simuladorb">Digite quantas pessoas tem na sua casa:</p>
+          <br>
+          <input id="pessoas" class="simuladorin" type="number" placeholder="EX: 4">
+          <br>
+          <button type="button" onclick="calc()">CALCULAR</button>
+          <br>
+          <p id="resultado1"></p>
+          <p id="resultado2"></p>
+          <p id="resultado3"></p>
+          <br>
+          <p id="resultado4"></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+  <script src="./JS/simulador.js"></script>
+</body>
+
+</html>
